@@ -1,0 +1,101 @@
+[
+  {
+    "name": "Rasuna Natural",
+    "slug": "rasuna-natural",
+    "description": "Besides having a fertile ground for agricultural practices, the mountainous region of Sidikalang (North Sumatra) is famous for their green beans production that presents an intense and complex flavour that is often compared to Southern American coffee.\nThis particular variant of Rasuna coffee has a well-balanced profile, with unique notes of chocolate, green apple and roasted peanut that leaves a clean aftertaste.",
+    "price": 91000,
+    "mainImg": "https://tanameracoffee.com/wp-content/uploads/2021/03/TC_RasunaNaturalFilter250g_210226-1-600x600.jpg",
+    "categoryId": 1,
+    "authorId": "644fdd8e2d34215de7482e34",
+    "createdAt": "2023-04-02T15:41:53.379Z",
+    "updatedAt": "2023-04-02T15:41:53.379Z"
+  },
+  {
+    "name": "Solok Natural CM TT",
+    "slug": "solok-natural-cm-tt",
+    "description": "The fertile grounds and highlands at Lubuk Gadang, South Solok (South Sumatra) is the right area to grow high quality coffee beans, at an altitude of 1600 – 1900 MSL. Solok coffee from South Solok is also known as Solok Minang Coffee. Interestingly, it is produced organically by using natural fertilisers without pesticides which results in higher value.",
+    "price": 220000,
+    "mainImg": "https://tanameracoffee.com/wp-content/uploads/2021/03/31092033-8b98-466e-bfe8-13be0fe6c27a.jpg",
+    "categoryId": 1,
+    "authorId": "644fdd8e2d34215de7482e34",
+    "createdAt": "2023-04-02T15:41:53.379Z",
+    "updatedAt": "2023-04-02T15:41:53.379Z"
+  },
+  {
+    "name": "Mandailing Washed",
+    "slug": "mandailing-washed",
+    "description": "Unlike any other coffee around the world, Mandailing was not named after the region where the coffee beans are grown, but rather it was named after an ethnic group living in the region.\nNot only the naming history that makes Mandailing coffee unique, also the combination of North Sumatra's rich volcanic soil and its humid tropical climate gives Mandailing its signature body and rustic sweetness that has earned its popularity worldwide.",
+    "price": 89000,
+    "mainImg": "https://tanameracoffee.com/wp-content/uploads/2021/03/TC_MandailingWashedEspresso250g_210226.jpg",
+    "categoryId": 2,
+    "authorId": "644fdd8e2d34215de7482e34",
+    "createdAt": "2023-04-02T15:41:53.379Z",
+    "updatedAt": "2023-04-02T15:41:53.379Z"
+  },
+  {
+    "name": "Bali Kintamani Washed",
+    "slug": "bali-kintamani-washed",
+    "description": "Removing the fruit flesh with a machine is the first step in the washed process. Afterwards, the coffee beans are fermented in a water tank and washed to remove any remaining fruit flesh.\nThe washed process brings out the bright and acidic flavours in the coffee with a clean aftertaste.",
+    "price": 91000,
+    "mainImg": "https://tanameracoffee.com/wp-content/uploads/2021/03/TC_KintamaniWashedFilter250g_210226-copy-3.jpg",
+    "categoryId": 2,
+    "authorId": "644fdd8e2d34215de7482e34",
+    "createdAt": "2023-04-02T15:41:53.379Z",
+    "updatedAt": "2023-04-02T15:41:53.379Z"
+  },
+  {
+    "name": "Bali Kintamani Mt. Batukaru Washed",
+    "slug": "bali-kintamani-mt-batukaru-washed",
+    "description": "Mount Batukaru, the second highest mountain in Bali, was named after its crater that resembles a coconut shell.\nThe coffee from this area has an interesting flavour while still staying true to its Balinese characteristics.\nIt is a completely must try for Kintamani coffee lovers.",
+    "price": 82000,
+    "mainImg": "https://tanameracoffee.com/wp-content/uploads/2021/03/TC_MtBatukaruWashedFilter250g_210226-copy-1.jpg",
+    "categoryId": 2,
+    "authorId": "644fdd8e2d34215de7482e34",
+    "createdAt": "2023-04-02T15:41:53.379Z",
+    "updatedAt": "2023-04-02T15:41:53.379Z"
+  },
+  {
+    "name": "Bali Kintamani Mt. Batukaru Natural",
+    "slug": "bali-kintamani-mt-batukaru-natural",
+    "description": "Mount Batukaru, the second highest mountain in Bali, was named after its crater that resembles a coconut shell.\nThe coffee from this area has an interesting flavour while still staying true to its Balinese characteristics.\nIt is a completely must try for Kintamani coffee lovers.",
+    "price": 99000,
+    "mainImg": "https://tanameracoffee.com/wp-content/uploads/2021/03/TC_MtBatukaruEspresso250kg_210226.jpg",
+    "categoryId": 1,
+    "authorId": "644fdd8e2d34215de7482e34",
+    "createdAt": "2023-04-02T15:41:53.379Z",
+    "updatedAt": "2023-04-02T15:41:53.379Z"
+  },
+  {
+    "name": "Sindoro Honey",
+    "slug": "sindoro-honey",
+    "description": "Inhaling the aroma of this coffee feels like the nose feels fresh. There is a fragrance of a kind of associated herbs such as the smell of ginger, the softness of tropical fruits.\nAnd when tasting, this coffee is not too thick, so it won't leave the impression of being left in the mouth for a long time.\nThe taste is quite balanced, not too sour, instead it gives out a pleasant sweet taste.",
+    "price": 99000,
+    "mainImg": "https://tanameracoffee.com/wp-content/uploads/2021/03/TC_SindoroHoneyFilter250g_210226-1.jpg",
+    "categoryId": 3,
+    "authorId": "644fdd8e2d34215de7482e34",
+    "createdAt": "2023-04-02T15:41:53.379Z",
+    "updatedAt": "2023-04-02T15:41:53.379Z"
+  },
+  {
+    "name": "Aceh Gayo Natural",
+    "slug": "aceh-gayo-natural",
+    "description": "Located on the western part of Indonesia, the Special Region of Aceh was once the centre of Indonesia's cross-sea trade.\nCoffee has been part of the Special Region of Aceh since the 1900s.\nIt is grown and harvested at an altitude of 1400 MSL in the Gayo highlands.\nThis particular variant of Gayo coffee gives off the taste of tropical fruits, green apple and caramel that lead to bright acidity.",
+    "price": 201000,
+    "mainImg": "https://tanameracoffee.com/wp-content/uploads/2021/03/TC_AcehGayoNaturalFilter250g_210226-copy-1.jpg",
+    "categoryId": 1,
+    "authorId": "644fdd8e2d34215de7482e34",
+    "createdAt": "2023-04-02T15:41:53.379Z",
+    "updatedAt": "2023-04-02T15:41:53.379Z"
+  },
+  {
+    "name": "Kerinci Natural",
+    "slug": "kerinci-natural",
+    "description": "Kerinci coffee is from Jambi province (Sumatra) that offers five different coffee variants in one sip.\nIt's been said that the unique taste of coffee from this regency is obtained from the five variants planted in one plantation.\nInterestingly enough, the initial reason behind the mixed-variety plantation was merely to make pest control easier.",
+    "price": 91000,
+    "mainImg": "https://tanamera.logixone.cloud/wp-content/uploads/2021/03/TC_KerinciNaturalFilter250g_210226.jpg",
+    "categoryId": 1,
+    "authorId": "644fdd8e2d34215de7482e34",
+    "createdAt": "2023-04-02T15:41:53.379Z",
+    "updatedAt": "2023-04-02T15:41:53.379Z"
+  }
+]

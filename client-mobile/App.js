@@ -1,52 +1,106 @@
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
-// import MyTabs from "./navigations/BottomTabs";
-import Header from "./components/Header";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View } from "react-native";
 import Home from "./screens/Home";
 import { Ionicons } from "@expo/vector-icons";
-import MyTabs from "./navigations/MyTabs";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { NavigationContainer } from "@react-navigation/native";
-import Profile from "./components/Profile";
-import Test from "./screens/Test";
+import { ApolloProvider } from "@apollo/client";
+import client from "./config/apollo";
+import Profile from "./screens/Profile";
+import Outlets from "./screens/Outlets";
+import Detail from "./screens/Detail";
 
-const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
+const Tab = createBottomTabNavigator();
+
+function MainPage() {
+  const navOption = ({ route }) => ({
+    tabBarIcon: ({ focused, color, size }) => {
+      size = 25;
+      color = focused ? "#404040" : "#303030";
+
+      let iconName;
+
+      if (route.name === "Home") {
+        iconName = focused ? "home" : "home-outline";
+      } else if (route.name === "Profile") {
+        iconName = focused ? "person-circle" : "person-circle-outline";
+      } else if (route.name === "Outlets") {
+        iconName = focused ? "cafe" : "cafe-outline";
+      }
+      return (
+        <View>
+          <Ionicons
+            name={iconName}
+            size={size}
+            color={color}
+            style={{ position: "relative", top: 5, alignSelf: "center" }}
+          />
+        </View>
+      );
+    },
+    tabBarActiveTintColor: "#404040",
+    tabBarInactiveTintColor: "#303030",
+    tabBarStyle: styles.tabBarStyle,
+    tabBarLabelStyle: {
+      position: "absolute",
+      bottom: -15,
+      fontSize: 10,
+      fontWeight: "bold",
+    },
+    headerShown: false,
+  });
+
+  return (
+    <Tab.Navigator screenOptions={navOption}>
+      <Tab.Screen name="Home" component={Home} />
+      <Tab.Screen name="Outlets" component={Outlets} />
+      <Tab.Screen name="Profile" component={Profile} />
+    </Tab.Navigator>
+  );
+}
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      {/* <Header />
-      <View style={{ flex: 5, top: -20 }}>
-        <Home />
+    <ApolloProvider client={client}>
+      <View style={styles.container}>
+        <NavigationContainer>
+          <Stack.Navigator>
+            <Stack.Screen
+              name="mainPage"
+              component={MainPage}
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen
+              name="detail"
+              component={Detail}
+              options={{
+                headerTransparent: true,
+                title: "DETAIL",
+                headerTitleStyle: {
+                  color: "white",
+                  fontFamily: "AbolitionTest-Regular",
+                  fontSize: 25,
+                },
+              }}
+            />
+          </Stack.Navigator>
+        </NavigationContainer>
       </View>
-      <View style={{ flex: 1, bottom: 0 }}></View>
-      <View
-        style={{ bottom: 20, display: "flex", flexDirection: "row", gap: 50 }}
-      >
-        <Ionicons name="home" size={40} />
-        <Ionicons name="search" size={40} />
-        <Ionicons name="search" size={40} />
-        <Ionicons name="search" size={40} />
-      </View> */}
-
-      <NavigationContainer>
-        <Stack.Navigator>
-          {/* <Stack.Screen name="test" component={Test} /> */}
-          <Stack.Screen name="home" component={Home} />
-          <Stack.Screen name="profile" component={Profile} />
-        </Stack.Navigator>
-      </NavigationContainer>
-      {/* <StatusBar style="auto" /> */}
-    </View>
+    </ApolloProvider>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    // flex: 1,
-    // alignItems: "center",
-    justifyContent: "center",
-    backgroundColor: "#404040",
+    height: 10,
+    backgroundColor: "#darkgray",
+    marginBottom: 0,
+    flex: 1,
+  },
+  tabBarStyle: {
+    height: 60,
+    backgroundColor: "#909090",
   },
 });

@@ -1,6 +1,6 @@
 import { Text, View } from "react-native";
 
-export default function Outlets() {
+export default function Profile() {
   return (
     <View
       style={{
@@ -11,7 +11,7 @@ export default function Outlets() {
       }}
     >
       <Text style={{ color: "white", fontSize: 30, letterSpacing: 1 }}>
-        Outlets
+        Profile
       </Text>
     </View>
   );
