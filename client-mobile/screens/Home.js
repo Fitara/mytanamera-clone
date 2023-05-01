@@ -14,7 +14,26 @@ export default function Home() {
   });
 
   if (loading) {
-    return <Text>loading...</Text>;
+    return (
+      <View
+        style={{
+          flex: 1,
+          alignItems: "center",
+          justifyContent: "center",
+          backgroundColor: "#808080",
+        }}
+      >
+        <Text
+          style={{
+            color: "red",
+            fontSize: 30,
+            letterSpacing: 1,
+          }}
+        >
+          loading...
+        </Text>
+      </View>
+    );
   }
 
   if (!fontsLoaded) {

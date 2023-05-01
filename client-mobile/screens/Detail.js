@@ -19,7 +19,26 @@ export default function Detail({ route }) {
   });
 
   if (loading) {
-    return <Text>loading...</Text>;
+    return (
+      <View
+        style={{
+          flex: 1,
+          alignItems: "center",
+          justifyContent: "center",
+          backgroundColor: "#808080",
+        }}
+      >
+        <Text
+          style={{
+            color: "red",
+            fontSize: 30,
+            letterSpacing: 1,
+          }}
+        >
+          loading...
+        </Text>
+      </View>
+    );
   }
 
   if (!fontsLoaded) {
@@ -47,8 +66,10 @@ export default function Detail({ route }) {
           <Text
             style={{
               color: "white",
+              width: 250,
               fontWeight: "bold",
               fontFamily: "AbolitionTest-Regular",
+              flexWrap: "wrap",
               marginTop: 5,
               letterSpacing: 1,
               fontSize: 25,
@@ -65,7 +86,7 @@ export default function Detail({ route }) {
               fontSize: 25,
             }}
           >
-            {data.detailProduct.price}
+            Rp. {data.detailProduct.price} K
           </Text>
         </View>
         <View
@@ -83,7 +104,9 @@ export default function Detail({ route }) {
             <Text style={{ color: "red", fontWeight: "bold" }}>:</Text>
           </View>
           <View>
-            <Text style={{ color: "white" }}>{data.detailProduct.Category.name}</Text>
+            <Text style={{ color: "white" }}>
+              {data.detailProduct.Category.name}
+            </Text>
           </View>
         </View>
         <View style={styles.testingDescription}>
