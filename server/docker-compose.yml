@@ -4,7 +4,7 @@ services:
     orchestrator:
         build: "./orchestrator"
         ports:
-            - 80:4000
+            - 81:4000
         environment:
           - URL_MONGO=http://user-service:4001
           - URL_Express=http://app-service:4002
