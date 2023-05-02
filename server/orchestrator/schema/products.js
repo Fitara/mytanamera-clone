@@ -1,6 +1,6 @@
 const axios = require("axios");
-const URL_Express = process.env.USER_URL || "http://localhost:4002";
-const URL_MONGO = process.env.USER_URL || "http://localhost:4001";
+const URL_Express = process.env.USER_URL 
+const URL_MONGO = process.env.USER_URL
 const redis = require('../config/redis')
 
 const productsDefs = `#graphql
