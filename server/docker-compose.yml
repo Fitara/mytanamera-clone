@@ -1,18 +1,18 @@
 version: "3.6"
 
-service:
+services:
     app-service:
-        build: ./service/app
+        build: "./service/app"
         ports:
-            - "4002:4002"
+            - 4002:4002
     user-service:
-        build: ./service/user
+        build: "./service/user"
         ports:
-            - "4001:4001"
+            - 4001:4001
     orchestrator:
-        build: ./orchestrator
+        build: "./orchestrator"
         ports:
-            - "80:4000"
+            - 80:4000
         enviroment:
           - URL_Express=http://app-service:4002
           - URL_MONGO=http://user-service:4001
