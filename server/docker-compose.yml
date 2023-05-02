@@ -14,5 +14,5 @@ services:
         ports:
             - "80:4000"
         enviroment:
-          - URL_Express: http://app-service:4002
-          - URL_MONGO: http://user-service:4001
+          - URL_Express=http://app-service:4002
+          - URL_MONGO=http://user-service:4001
