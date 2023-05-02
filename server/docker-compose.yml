@@ -10,7 +10,7 @@ services:
           - URL_Express=http://app-service:4002
        
     user-service:
-        build: "./service/user"
+        build: "./service/users"
         ports:
             - 4001:4001
 
