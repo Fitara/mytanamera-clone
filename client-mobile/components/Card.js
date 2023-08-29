@@ -3,8 +3,6 @@ import { useQuery } from "@apollo/client";
 import { GET_PRODUCTS } from "../query";
 
 export default function Card() {
-
-
   return (
     <View
       style={{

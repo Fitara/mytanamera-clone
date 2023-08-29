@@ -6,7 +6,7 @@ import { useQuery } from "@apollo/client";
 
 export default function Detail({ route }) {
   const { detailId } = route.params;
-
+  console.log({ detailId });
   const { loading, data } = useQuery(GET_DETAIL, {
     variables: {
       detailProductId: detailId,

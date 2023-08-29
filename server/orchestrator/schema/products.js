@@ -1,7 +1,7 @@
 const axios = require("axios");
-const URL_Express = process.env.USER_URL 
-const URL_MONGO = process.env.USER_URL
-const redis = require('../config/redis')
+const URL_Express = process.env.APP_URL || "http://localhost:4002";
+const URL_MONGO = process.env.USER_URL || "http://localhost:4001";
+const redis = require("../config/redis");
 
 const productsDefs = `#graphql
 
@@ -55,7 +55,7 @@ const productsResolver = {
   Query: {
     products: async () => {
       try {
-        const productCache = await redis.get('app:products');
+        const productCache = await redis.get("app:products");
 
         if (productCache) {
           return JSON.parse(productCache);
@@ -66,7 +66,7 @@ const productsResolver = {
           url: URL_Express + "/products",
         });
 
-        await redis.set('app:products', JSON.stringify(data));
+        await redis.set("app:products", JSON.stringify(data));
 
         return data;
       } catch (error) {

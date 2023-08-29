@@ -7,7 +7,8 @@ import Carousel from "../components/Carousel";
 import Card from "../components/Card";
 
 export default function Home() {
-  const { loading, data } = useQuery(GET_PRODUCTS);
+  const { loading, error, data } = useQuery(GET_PRODUCTS);
+  
   const [fontsLoaded] = useFonts({
     "AbolitionTest-Regular": require("../assets/fonts/AbolitionTest-Regular.otf"),
     "AbolitionTest-Soft": require("../assets/fonts/AbolitionTest-Soft.otf"),

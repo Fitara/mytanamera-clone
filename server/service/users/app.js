@@ -13,7 +13,6 @@ app.post('/users', Controller.createUser);
 app.delete('/users/:id', Controller.deleteUser);
 app.get('/users/:id', Controller.getUser);
 
-console.log("MASOOOOOOOK <<<<<<<<<<<");
 app.use(Errors)
 
 connectDb().then(() => {

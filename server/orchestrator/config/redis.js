@@ -6,4 +6,8 @@ const redis = new Redis({
   password: "47v6J9uPL5ecvubx2ccduemEQc2tt44a",
 });
 
+redis.on("error", (error) => {
+  console.error("Error connecting to Redis:", error);
+});
+
 module.exports = redis;
